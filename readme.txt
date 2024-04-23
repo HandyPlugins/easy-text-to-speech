@@ -75,7 +75,7 @@ You can follow the instructions [here](https://handyplugins.co/easy-text-to-spee
 
 == Changelog ==
 
-= 1.0 (xx xx, 2024) =
+= 1.0 preview (April 23, 2024) =
 * First release
 
 == Upgrade Notice ==
