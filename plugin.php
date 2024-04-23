@@ -98,11 +98,11 @@ if ( ! defined( 'EASYTTS_IS_NETWORK' ) ) {
  *
  * @return void
  */
-function bootstrap() {
+function bootstrap_easytts() {
 	Core\setup();
 	Editor\setup();
 	Admin\Dashboard\setup();
 	Install::setup();
 }
 
-add_action( 'plugins_loaded', __NAMESPACE__ . '\\bootstrap' );
+add_action( 'plugins_loaded', __NAMESPACE__ . '\\bootstrap_easytts' );
