@@ -1,0 +1,8 @@
+/**
+* EasyTTS - Admin Styles
+*/
+@import url("@wpmudev/shared-ui/dist/css/shared-ui.css");
+
+.sui-modal{
+	z-index:9999!important;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "handyplugins/easy-text-to-speech",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "HandyPlugins",
+      "email": "support@handyplugins.co"
+    }
+  ],
+  "require": {
+    "php": ">=7.2"
+  },
+  "require-dev": {
+    "10up/phpcs-composer": "dev-master"
+  },
+  "scripts": {
+    "lint": "phpcs plugin.php ./includes -s",
+    "lint-fix": "phpcbf plugin.php ./includes"
+  },
+  "autoload": {
+    "psr-4": {
+      "EasyTTS\\": "includes/classes/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "rules": {},
+  "globals": {
+    "module": true,
+    "process": true,
+    "jquery": true,
+    "wp": true,
+    "ajaxurl": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "env": {
+    "es6": true
+  }
+}

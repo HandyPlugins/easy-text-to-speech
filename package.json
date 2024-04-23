@@ -1,0 +1,35 @@
+{
+  "name": "easy-text-to-speech",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run watch",
+    "watchhot": "10up-toolkit watch --port=5010 --hot",
+    "watch": "10up-toolkit watch",
+    "build": "10up-toolkit build",
+    "format-js": "10up-toolkit format-js",
+    "lint-js": "10up-toolkit lint-js",
+    "lint-style": "10up-toolkit lint-style",
+    "test": "10up-toolkit test-unit-jest",
+    "clean-dist": "rm -rf ./dist",
+    "make-pot": "wp i18n make-pot . languages/easy-text-to-speech.pot --domain='easy-text-to-speech'",
+    "build-release": "npm install --production=false && composer install --no-dev && npm run build && npm run make-pot"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "@wpmudev/shared-ui": "2.12.24",
+    "10up-toolkit": "^6.0"
+  },
+  "dependencies": {
+    "@wordpress/icons": "^9.26.0",
+    "prop-types": "^15.7.2"
+  },
+  "10up-toolkit": {
+    "entry": {
+      "admin": "./assets/js/admin/admin.js",
+      "editor": "./assets/js/admin/editor.js"
+    },
+    "wpDependencyExternals": true
+  }
+}
