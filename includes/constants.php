@@ -14,7 +14,7 @@ const DB_VERSION_OPTION = 'easytts_db_version';
 const INPUT_MASK_LENGTH = 5;
 
 // urls
-const DOCS_URL    = 'https://handyplugins.co/easy-text-to-speech/docs/';
+const DOCS_URL    = 'https://handyplugins.co/docs-category/easy-text-to-speech/';
 const BLOG_URL    = 'https://handyplugins.co/blog/';
 const FAQ_URL     = 'https://handyplugins.co/easy-text-to-speech/#faq';
 const SUPPORT_URL = 'https://handyplugins.co/contact/';
