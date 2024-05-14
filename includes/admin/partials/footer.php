@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <footer>
 	<!-- ELEMENT: Navigation -->
 	<ul class="sui-footer-nav">
-		<li><a href="<?php echo esc_url_raw( FAQ_URL ); ?>" target="_blank"><?php esc_html_e( 'FAQ', 'easy-text-to-speech' ); ?></a></li>
+		<li><a href="<?php echo esc_url( FAQ_URL ); ?>" target="_blank"><?php esc_html_e( 'FAQ', 'easy-text-to-speech' ); ?></a></li>
 		<li><a href="<?php echo esc_url( BLOG_URL ); ?>" target="_blank"><?php esc_html_e( 'Blog', 'easy-text-to-speech' ); ?></a></li>
 		<li><a href="<?php echo esc_url( SUPPORT_URL ); ?>" target="_blank"><?php esc_html_e( 'Support', 'easy-text-to-speech' ); ?></a></li>
 		<li><a href="<?php echo esc_url( DOCS_URL ); ?>" target="_blank"><?php esc_html_e( 'Docs', 'easy-text-to-speech' ); ?></a></li>
