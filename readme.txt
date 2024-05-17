@@ -2,7 +2,7 @@
 Contributors:      handyplugins, m_uysl
 Tags:              text-to-speech, voice generation, audio, accessibility, polly
 Requires at least: 5.7
-Tested up to:      6.5.2
+Tested up to:      6.5.3
 Requires PHP:      7.2.5
 Stable tag:        1.0
 License:           GPLv3
@@ -47,7 +47,7 @@ Easy Text-to-Speech utilizes third-party services such as Amazon Polly, OpenAI, 
 Bug reports and pull requests are welcome on [GitHub](https://github.com/HandyPlugins/easy-text-to-speech/).
 
 = Documentation =
-Our documentation can be found at [https://handyplugins.co/easy-text-to-speech/docs/](https://handyplugins.co/easy-text-to-speech/docs/)
+Our documentation can be found at [https://handyplugins.co/docs-category/easy-text-to-speech/](https://handyplugins.co/docs-category/easy-text-to-speech/)
 
 == Installation ==
 1. Upload the entire `/easy-text-to-speech` directory to the `/wp-content/plugins/` directory.
@@ -66,7 +66,7 @@ Yes, you can use it with any post type.
 
 = Where to get Amazon Polly API key? =
 
-You can follow the instructions [here](https://handyplugins.co/easy-text-to-speech/docs/installation-configuration/).
+You can follow the instructions [here](https://handyplugins.co/docs/easy-text-to-speech-installation-configuration/).
 
 == Screenshots ==
 
@@ -75,7 +75,7 @@ You can follow the instructions [here](https://handyplugins.co/easy-text-to-spee
 
 == Changelog ==
 
-= 1.0 preview (April 23, 2024) =
+= 1.0 (May 17, 2024) =
 * First release
 
 == Upgrade Notice ==
