@@ -2,16 +2,16 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Text-to-Speech 1.0\n"
+"Project-Id-Version: Easy Text-to-Speech 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-text-to-speech\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-05-17T08:16:10+00:00\n"
+"POT-Creation-Date: 2024-09-17T08:39:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: easy-text-to-speech\n"
 
 #. Plugin Name of the plugin
@@ -136,17 +136,17 @@ msgid "AWS Region"
 msgstr ""
 
 #: includes/admin/partials/settings.php:150
-#: includes/editor.php:104
+#: includes/editor.php:107
 msgid "Voice Engine"
 msgstr ""
 
 #: includes/admin/partials/settings.php:165
-#: includes/editor.php:116
+#: includes/editor.php:119
 msgid "Standard"
 msgstr ""
 
 #: includes/admin/partials/settings.php:178
-#: includes/editor.php:129
+#: includes/editor.php:132
 msgid "Neural"
 msgstr ""
 
@@ -157,7 +157,7 @@ msgstr ""
 
 #: includes/admin/partials/settings.php:207
 #: includes/admin/partials/settings.php:350
-#: includes/editor.php:152
+#: includes/editor.php:155
 msgid "Select..."
 msgstr ""
 
@@ -230,28 +230,28 @@ msgstr ""
 msgid "Update settings"
 msgstr ""
 
-#: includes/editor.php:43
-#: includes/editor.php:76
+#: includes/editor.php:46
+#: includes/editor.php:79
 msgid "Text to Speech"
 msgstr ""
 
-#: includes/editor.php:80
+#: includes/editor.php:83
 msgid "Close this modal"
 msgstr ""
 
-#: includes/editor.php:87
+#: includes/editor.php:90
 msgid "What text do you want to convert to voice?"
 msgstr ""
 
-#: includes/editor.php:134
+#: includes/editor.php:137
 msgid "Voice"
 msgstr ""
 
-#: includes/editor.php:230
+#: includes/editor.php:233
 msgid "Generate"
 msgstr ""
 
-#: includes/editor.php:235
+#: includes/editor.php:238
 msgid "Generating..."
 msgstr ""
 
