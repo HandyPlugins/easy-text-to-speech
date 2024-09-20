@@ -135,18 +135,18 @@ wp.hooks.addFilter('editor.BlockEdit', 'easytts/toolbar-button', withToolbarButt
 	});
 
 
-	$('.easytts-classic-editor-btn').on('click', function (e) {
-		let tinyMceActive = isTinyMCEActive();
+	$(document).on('click', '.easytts-classic-editor-btn', function (e) {
+		const editorID = $(this).data('editor-id') || 'content';
+		let tinyMceActive = isTinyMCEActive(editorID);
 		let voiceContent = '';
 		if (tinyMceActive) {
-			voiceContent = getTinymceContent();
+			voiceContent = getTinymceContent(editorID);
 		} else {
-			const selectedText = getSelectedText($('#content'));
-			voiceContent = selectedText ? selectedText.trim() : $('#content').val();
+			const selectedText = getSelectedText($('#' + editorID));
+			voiceContent = selectedText ? selectedText.trim() : $('#' + editorID).val();
 			voiceContent = getTrimmedText(voiceContent);
 		}
 
-		const editorID = $(this).data('editor-id');
 		$('#easytts-editor-id').val(editorID);
 
 		$('#easytts-content').text(voiceContent);
