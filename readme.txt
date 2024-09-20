@@ -4,7 +4,7 @@ Tags:              text-to-speech, voice generation, audio, accessibility, polly
 Requires at least: 5.7
 Tested up to:      6.6
 Requires PHP:      7.2.5
-Stable tag:        1.0.1
+Stable tag:        1.0.2
 License:           GPLv3
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -74,6 +74,10 @@ You can follow the instructions [here](https://handyplugins.co/docs/easy-text-to
 2. Block Editor Integration
 
 == Changelog ==
+
+= 1.0.2 (September 20, 2024) =
+* Add multiple TinyMCE editor support.
+* Fixed - ACF compatibility issue.
 
 = 1.0.1 (September 17, 2024) =
 * Fixed - Don't add TTS button for frontend TinyMCE editor.
