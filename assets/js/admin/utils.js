@@ -24,8 +24,8 @@ export const getTypewriterSpeed = (strLen) => {
 	return 30;
 };
 
-export const isTinyMCEActive = () => {
-	if (jQuery('#wp-content-wrap').hasClass('tmce-active')) {
+export const isTinyMCEActive = (editor) => {
+	if (jQuery('#wp-' + editor + '-wrap').hasClass('tmce-active')) {
 		return true;
 	}
 
@@ -88,7 +88,11 @@ export const getTinymceContent = (editor_id, textarea_id) => {
 export const getSelectedText = (textarea) =>  {
 	const start = textarea.prop('selectionStart');
 	const finish = textarea.prop('selectionEnd');
-	return textarea.val().substring(start, finish);
+	const value = textarea.val();
+	if (value && start !== undefined && finish !== undefined) {
+		return value.substring(start, finish);
+	}
+	return '';
 }
 
 export const isBlockEditor = () =>  {
