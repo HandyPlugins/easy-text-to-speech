@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@wpmudev/shared-ui": "2.12.24",
-    "10up-toolkit": "^6.0"
+    "10up-toolkit": "^6.2"
   },
   "dependencies": {
     "@wordpress/icons": "^9.26.0",
