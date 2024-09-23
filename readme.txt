@@ -4,7 +4,7 @@ Tags:              text-to-speech, voice generation, audio, accessibility, polly
 Requires at least: 5.7
 Tested up to:      6.6
 Requires PHP:      7.2.5
-Stable tag:        1.0.2
+Stable tag:        1.0.3
 License:           GPLv3
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -74,6 +74,10 @@ You can follow the instructions [here](https://handyplugins.co/docs/easy-text-to
 2. Block Editor Integration
 
 == Changelog ==
+
+= 1.0.3 (September 23, 2024) =
+* Use wp-block-editor instead of wp-edit-post for block editor.
+* Dependency updates.
 
 = 1.0.2 (September 20, 2024) =
 * Add multiple TinyMCE editor support.

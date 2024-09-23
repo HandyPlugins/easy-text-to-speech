@@ -3,7 +3,7 @@
  * Plugin Name:       Easy Text-to-Speech
  * Plugin URI:        https://handyplugins.co/easy-text-to-speech/
  * Description:       Turn text into high-quality speech with Amazon Polly, OpenAI, and ElevenLabs.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Requires at least: 5.7
  * Requires PHP:      7.2.5
  * Author:            HandyPlugins
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Useful global constants.
-define( 'EASYTTS_VERSION', '1.0.2' );
+define( 'EASYTTS_VERSION', '1.0.3' );
 define( 'EASYTTS_DB_VERSION', '2.0' );
 define( 'EASYTTS_PLUGIN_FILE', __FILE__ );
 define( 'EASYTTS_URL', plugin_dir_url( __FILE__ ) );
