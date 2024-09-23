@@ -270,12 +270,11 @@ function editor_assets() {
 			'jquery',
 			'lodash',
 			'wp-i18n',
-			'wp-edit-post',
 			'wp-components',
 			'wp-compose',
 			'wp-data',
-			'wp-edit-post',
 			'wp-element',
+			'wp-block-editor',
 		],
 		EASYTTS_VERSION,
 		true
