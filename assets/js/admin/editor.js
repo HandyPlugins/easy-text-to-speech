@@ -51,6 +51,12 @@ const withToolbarButton = createHigherOrderComponent((BlockEdit) => {
 
 					selectedText = postContent;
 				}
+
+				// Get the post title
+				const postTitle = wp.data.select('core/editor').getEditedPostAttribute('title');
+
+				// Append the post title to the selected text
+				selectedText = postTitle + '\n\n' + selectedText;
 			}
 
 			return selectedText;
@@ -145,6 +151,11 @@ wp.hooks.addFilter('editor.BlockEdit', 'easytts/toolbar-button', withToolbarButt
 			const selectedText = getSelectedText($('#' + editorID));
 			voiceContent = selectedText ? selectedText.trim() : $('#' + editorID).val();
 			voiceContent = getTrimmedText(voiceContent);
+
+			if (!selectedText) {
+				const postTitle = jQuery('#title').val();
+				voiceContent = postTitle + '\n\n' + voiceContent;
+			}
 		}
 
 		$('#easytts-editor-id').val(editorID);

@@ -74,7 +74,10 @@ export const getTinymceContent = (editor_id, textarea_id) => {
 		if (currentSelection) {
 			return currentSelection.trim();
 		}
-		return tinyMCE.get(editor_id).getContent({format: 'text'});
+		const postTitle = jQuery('#title').val();
+		const postContent = tinyMCE.get(editor_id).getContent({format: 'text'});
+		const content = postTitle + '\n\n' + postContent;
+		return content;
 	} else {
 		const selectedText = getSelectedText(jQuery('#' + textarea_id));
 		if (selectedText) {
