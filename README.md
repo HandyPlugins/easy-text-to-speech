@@ -3,7 +3,7 @@ Easy Text-to-Speech
 
 Easy Text-to-Speech is a powerful, user-friendly WordPress plugin designed to transform your textual content into high-quality synthesized speech.
 
-Documentation: [https://handyplugins.co/easy-text-to-speech/docs/](https://handyplugins.co/easy-text-to-speech/docs/)
+Documentation: [https://handyplugins.co/docs-category/easy-text-to-speech/](https://handyplugins.co/docs-category/easy-text-to-speech/)
 
 ## Setup
 
