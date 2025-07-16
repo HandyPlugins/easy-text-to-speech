@@ -40,6 +40,11 @@ function add_media_buttons( $editor_id ) {
 	if ( ! is_admin() ) {
 		return;
 	}
+
+	if ( isset( $_GET['action'] ) && 'elementor' === $_GET['action'] ) {
+		return; // Don't show button in Elementor editor.
+	}
+
 	?>
 	<button type="button" class="button easytts-classic-editor-btn" data-editor-id="<?php echo esc_attr( $editor_id ); ?>">
 		<span class="dashicons dashicons-controls-volumeon wp-media-buttons-icon"></span>
