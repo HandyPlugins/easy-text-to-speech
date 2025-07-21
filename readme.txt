@@ -4,7 +4,7 @@ Tags:              text-to-speech, voice generation, audio, accessibility, polly
 Requires at least: 5.7
 Tested up to:      6.8
 Requires PHP:      7.2.5
-Stable tag:        1.1
+Stable tag:        1.1.1
 License:           GPLv3
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -74,6 +74,10 @@ You can follow the instructions [here](https://handyplugins.co/docs/easy-text-to
 2. Block Editor Integration
 
 == Changelog ==
+
+= 1.1.1 (July 21, 2025) =
+* Do not show TTS button on Elementor.
+* Dependency updates.
 
 = 1.1 (April 12, 2025) =
 * Add post title when no particular text is selected.
