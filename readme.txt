@@ -2,9 +2,9 @@
 Contributors:      handyplugins, m_uysl
 Tags:              text-to-speech, voice, audio, accessibility, speech
 Requires at least: 5.7
-Tested up to:      6.9
+Tested up to:      7.0
 Requires PHP:      7.2.5
-Stable tag:        1.1.2
+Stable tag:        1.2
 License:           GPLv3
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -32,6 +32,7 @@ Unlock the full potential of Easy Text-to-Speech Pro with exclusive premium feat
 
 - **OpenAI Integration:** Harness OpenAI's state-of-the-art text-to-speech technology for crystal-clear, highly natural audio outputs.
 - **ElevenLabs Integration:** Enjoy ElevenLabs' exceptional, lifelike voice synthesis for a truly natural-sounding experience.
+- **Deepgram Integration:** Leverage Deepgram's advanced AI-powered text-to-speech technology for fast, accurate, and expressive voice synthesis.
 - **Premium Support:** Receive dedicated, responsive support to help with any queries or issues quickly and efficiently.
 - **Ad-Free Experience:** Access an ad-free interface within the plugin’s admin, providing a more focused and streamlined user experience.
 - **Exclusive Voices & Features:** Get access to additional premium voices, enhanced customization options, and other advanced features designed to take your content to the next level.
@@ -45,6 +46,7 @@ Easy Text-to-Speech uses third-party services such as Amazon Polly, OpenAI, and 
 * [AWS Data Privacy Center](https://aws.amazon.com/compliance/data-privacy/)
 * [OpenAI Privacy Policy](https://openai.com/policies/privacy-policy)
 * [ElevenLabs Privacy Policy](https://elevenlabs.io/privacy)
+* [Deepgram Privacy Policy](https://deepgram.com/privacy)
 
 == Contributing & Bug Report ==
 We welcome bug reports, feature requests, and pull requests! Feel free to contribute on [GitHub](https://github.com/HandyPlugins/easy-text-to-speech/).
@@ -75,6 +77,11 @@ Follow the instructions on our [installation guide](https://handyplugins.co/docs
 2. **Block Editor Integration** – Demonstrates integration with the block editor for easy audio conversion.
 
 == Changelog ==
+
+= 1.2 (March 03, 2026) =
+* Added Deepgram integration (UI).
+* Tested with WordPress 7.0
+* Updated plugin dependencies
 
 = 1.1.2 (October 22, 2025) =
 * Tested with WordPress 6.9
