@@ -227,6 +227,28 @@ function render_template() {
 								</div>
 							<?php endif; ?>
 
+							<?php if ( 'deepgram' === $settings['tts_provider'] ) : ?>
+								<div id="deepgram-details">
+									<div class="sui-box-settings-row">
+										<?php
+										$deepgram_voices = [];
+										?>
+										<div class="sui-form-field">
+											<span class="sui-settings-label"><?php esc_html_e( 'TTS Voice', 'easy-text-to-speech' ); ?></span>
+
+											<select name="deepgram_tts_voice" id="deepgram_tts_voice" class="sui-select">
+												<?php foreach ( $deepgram_voices as $tts_voice => $voice_label ) : ?>
+													<option <?php selected( $tts_voice, $settings['deepgram_default_voice'] ); ?> value="<?php echo esc_attr( $tts_voice ); ?>">
+														<?php echo esc_attr( $voice_label ); ?>
+													</option>
+												<?php endforeach; ?>
+											</select>
+											<span class="sui-description"><?php esc_html_e( 'The voice to use when generating the audio.', 'easy-text-to-speech' ); ?></span>
+										</div>
+									</div>
+								</div>
+							<?php endif; ?>
+
 
 						</div>
 

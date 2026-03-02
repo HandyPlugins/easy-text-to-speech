@@ -81,6 +81,8 @@ function get_settings() {
 		'openai_api_key'           => '',
 		'elevenlabs_api_key'       => '',
 		'elevenlabs_default_voice' => '',
+		'deepgram_api_key'         => '',
+		'deepgram_default_voice'   => '',
 		'enable_ssml'              => true,
 	];
 

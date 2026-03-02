@@ -129,6 +129,7 @@ function save_settings() {
 		$settings['openai_tts_voice']         = sanitize_text_field( filter_input( INPUT_POST, 'openai_tts_voice', FILTER_SANITIZE_SPECIAL_CHARS ) );
 		$settings['tts_provider']             = sanitize_text_field( filter_input( INPUT_POST, 'tts_provider', FILTER_SANITIZE_SPECIAL_CHARS ) );
 		$settings['elevenlabs_default_voice'] = sanitize_text_field( filter_input( INPUT_POST, 'elevenlabs_default_voice', FILTER_SANITIZE_SPECIAL_CHARS ) );
+		$settings['deepgram_default_voice']   = sanitize_text_field( filter_input( INPUT_POST, 'deepgram_default_voice', FILTER_SANITIZE_SPECIAL_CHARS ) );
 
 		$aws_polly_access_key = sanitize_text_field( filter_input( INPUT_POST, 'aws_polly_access_key' ) );
 		$aws_polly_secret_key = sanitize_text_field( filter_input( INPUT_POST, 'aws_polly_secret_key' ) );

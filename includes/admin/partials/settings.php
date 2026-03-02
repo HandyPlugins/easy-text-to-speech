@@ -83,6 +83,22 @@ $settings = \EasyTTS\Utils\get_settings();
 										</span>
 									</label>
 								</li>
+								<li>
+									<label for="deepgram" class="sui-box-selector sui-disabled">
+										<input
+											<?php checked( $settings['tts_provider'], 'deepgram' ); ?>
+											type="radio"
+											name="tts_provider"
+											value="deepgram"
+											id="deepgram"
+											aria-labelledby="deepgram-label"
+										>
+										<span aria-hidden="true">
+											<span id="deepgram-label" aria-hidden="true"><?php esc_html_e( 'Deepgram', 'easy-text-to-speech' ); ?></span>
+											<span class="sui-tag sui-tag-pro"><?php esc_html_e( 'Pro', 'easy-text-to-speech' ); ?></span>
+										</span>
+									</label>
+								</li>
 							</ul>
 						</div>
 
@@ -310,7 +326,7 @@ $settings = \EasyTTS\Utils\get_settings();
 								</div>
 							</div>
 
-							<div id="elevenlabs-details" class="tts-provider-settings" style=" <?php echo( 'elevenlabs' !== $settings['tts_provider'] ? 'display:none' : '' ); ?>" tabindex="0">
+								<div id="elevenlabs-details" class="tts-provider-settings" style=" <?php echo( 'elevenlabs' !== $settings['tts_provider'] ? 'display:none' : '' ); ?>" tabindex="0">
 								<div class="sui-box-settings-row">
 									<div class="sui-box-settings-col-1">
 										<span class="sui-settings-label" id="elevenlabs_api_key_label"><?php esc_html_e( 'API Key', 'easy-text-to-speech' ); ?></span>
@@ -358,10 +374,60 @@ $settings = \EasyTTS\Utils\get_settings();
 									</div>
 								</div>
 
+								</div>
+
+								<div id="deepgram-details" class="tts-provider-settings" style=" <?php echo( 'deepgram' !== $settings['tts_provider'] ? 'display:none' : '' ); ?>" tabindex="0">
+									<div class="sui-box-settings-row">
+										<div class="sui-box-settings-col-1">
+											<span class="sui-settings-label" id="deepgram_api_key_label"><?php esc_html_e( 'API Key', 'easy-text-to-speech' ); ?></span>
+										</div>
+
+										<div class="sui-box-settings-col-2">
+											<div class="sui-form-field">
+												<input
+													name="deepgram_api_key"
+													id="deepgram_api_key"
+													class="sui-form-control sui-input-md"
+													aria-labelledby="deepgram_api_key_label"
+													type="text"
+													value="<?php echo esc_attr( \EasyTTS\Utils\mask_string( \EasyTTS\Utils\get_decrypted_value( $settings['deepgram_api_key'] ), EasyTTS\Constants\INPUT_MASK_LENGTH ) ); ?>"
+													autocomplete="off"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="sui-box-settings-row">
+										<div class="sui-box-settings-col-1">
+											<span class="sui-settings-label" id="deepgram_default_voice"><?php esc_html_e( 'Default Voice', 'easy-text-to-speech' ); ?></span>
+										</div>
+
+										<div class="sui-box-settings-col-2">
+											<div class="sui-form-field">
+												<select name="deepgram_default_voice" id="deepgram_default_voice" class="sui-select">
+													<?php $voices = []; ?>
+													<?php if ( ! empty( $voices ) ) : ?>
+														<?php foreach ( $voices as $voice_id => $voice_name ) : ?>
+															<option <?php selected( $voice_id, $settings['deepgram_default_voice'] ); ?> value="<?php echo esc_attr( $voice_id ); ?>">
+																<?php echo esc_attr( $voice_name ); ?>
+															</option>
+														<?php endforeach; ?>
+													<?php else : ?>
+														<option value="-1">
+															<?php esc_html_e( 'Select...', 'easy-text-to-speech' ); ?>
+														</option>
+													<?php endif; ?>
+												</select>
+												<span class="sui-description"><?php esc_html_e( 'The default voice to use when generating the audio.', 'easy-text-to-speech' ); ?></span>
+
+											</div>
+
+										</div>
+									</div>
+
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
 
 				<div class="sui-box-settings-row">
@@ -418,7 +484,7 @@ $settings = \EasyTTS\Utils\get_settings();
 				<!-- Upsell ads -->
 				<div class="sui-box-settings-row sui-upsell-row">
 					<div class="sui-upsell-notice" style="padding-left: 0;">
-						<p><?php esc_html_e( 'Upgrade to the Pro version to unlock exclusive access to OpenAI and Elevenlab\'s advanced text-to-speech models.', 'easy-text-to-speech' ); ?><br>
+						<p><?php esc_html_e( 'Upgrade to the Pro version to unlock exclusive access to OpenAI, ElevenLabs, and Deepgram advanced text-to-speech models.', 'easy-text-to-speech' ); ?><br>
 							<a href="https://handyplugins.co/easy-text-to-speech/?utm_source=wp_admin&utm_medium=plugin&utm_campaign=settings_page" rel="noopener noreferrer nofollow" target="_blank" class="sui-button sui-button-purple" style="margin-top: 10px;color:#fff;"><?php esc_html_e( 'Try Easy Text-to-Speech PRO Today', 'magic-login' ); ?></a>
 						</p>
 					</div>
@@ -439,4 +505,3 @@ $settings = \EasyTTS\Utils\get_settings();
 
 	</section>
 </form>
-
