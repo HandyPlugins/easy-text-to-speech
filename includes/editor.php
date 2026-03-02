@@ -41,7 +41,7 @@ function add_media_buttons( $editor_id ) {
 		return;
 	}
 
-	if ( isset( $_GET['action'] ) && 'elementor' === $_GET['action'] ) {
+	if ( isset( $_GET['action'] ) && 'elementor' === $_GET['action'] ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		return; // Don't show button in Elementor editor.
 	}
 
