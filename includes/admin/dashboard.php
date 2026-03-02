@@ -115,6 +115,11 @@ function save_settings() {
 		return;
 	}
 
+	$required_capability = EASYTTS_IS_NETWORK ? 'manage_network' : 'manage_options';
+	if ( ! current_user_can( $required_capability ) ) {
+		return;
+	}
+
 	$nonce = filter_input( INPUT_POST, 'easytts_settings', FILTER_SANITIZE_SPECIAL_CHARS );
 	if ( wp_verify_nonce( $nonce, 'easytts_settings' ) ) {
 		$old_settings                         = \EasyTTS\Utils\get_settings();
