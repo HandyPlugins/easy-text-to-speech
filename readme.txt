@@ -54,6 +54,18 @@ We welcome bug reports, feature requests, and pull requests! Feel free to contri
 == Documentation ==
 Comprehensive documentation can be found at [https://handyplugins.co/docs-category/easy-text-to-speech/](https://handyplugins.co/docs-category/easy-text-to-speech/).
 
+== More from HandyPlugins ==
+
+If Easy Text-to-Speech is helpful on your site, you may also want to explore our other WordPress plugins:
+
+* [Powered Cache](https://poweredcache.com/) – Caching and optimization for WordPress to help improve PageSpeed and Core Web Vitals.
+* [Magic Login Pro](https://handyplugins.co/magic-login-pro/) – Easy, secure, and passwordless authentication for WordPress.
+* [SessionQuota Pro](https://handyplugins.co/sessionquota-pro/) – Limit concurrent sessions in WordPress.
+* [Stream Integration Pro](https://handyplugins.co/stream-integration-pro/) – Upload, sync, restore, and manage WordPress videos with Cloudflare Stream.
+* [Handywriter](https://handyplugins.co/handywriter/) – AI-powered writing assistant for WordPress.
+* [PaddlePress PRO](https://handyplugins.co/paddlepress-pro/) – Paddle plugin for WordPress.
+* [WP Accessibility Toolkit](https://handyplugins.co/wp-accessibility-toolkit/) – Tools to help make your WordPress site more accessible.
+
 == Installation ==
 
 1. Upload the entire `/easy-text-to-speech` directory to the `/wp-content/plugins/` directory.
@@ -112,4 +124,3 @@ Follow the instructions on our [installation guide](https://handyplugins.co/docs
 * First release
 
 == Upgrade Notice ==
-
