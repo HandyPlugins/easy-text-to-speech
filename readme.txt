@@ -2,9 +2,9 @@
 Contributors:      handyplugins, m_uysl
 Tags:              text-to-speech, voice, audio, accessibility, speech
 Requires at least: 5.7
-Tested up to:      7.0
+Tested up to:      7.1
 Requires PHP:      7.2.5
-Stable tag:        1.2
+Stable tag:        1.2.1
 License:           GPLv3
 License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -89,6 +89,10 @@ Follow the instructions on our [installation guide](https://handyplugins.co/docs
 2. **Block Editor Integration** – Demonstrates integration with the block editor for easy audio conversion.
 
 == Changelog ==
+
+= 1.2.1 (August 17, 2026) =
+* Tested with WordPress 7.1
+* Updated plugin dependencies
 
 = 1.2 (March 03, 2026) =
 * Added Deepgram integration (UI).
