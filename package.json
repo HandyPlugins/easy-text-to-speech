@@ -22,7 +22,7 @@
     "10up-toolkit": "^7.0"
   },
   "dependencies": {
-    "@wordpress/icons": "^9.26.0",
+    "@wordpress/icons": "^18.0.0",
     "prop-types": "^15.7.2"
   },
   "10up-toolkit": {
